@@ -1,0 +1,15 @@
+C:\Users\shado\c_sharp\collection_practice\bin\Debug\net6.0\collection_practice.exe
+C:\Users\shado\c_sharp\collection_practice\bin\Debug\net6.0\collection_practice.deps.json
+C:\Users\shado\c_sharp\collection_practice\bin\Debug\net6.0\collection_practice.runtimeconfig.json
+C:\Users\shado\c_sharp\collection_practice\bin\Debug\net6.0\collection_practice.dll
+C:\Users\shado\c_sharp\collection_practice\bin\Debug\net6.0\collection_practice.pdb
+C:\Users\shado\c_sharp\collection_practice\obj\Debug\net6.0\collection_practice.csproj.AssemblyReference.cache
+C:\Users\shado\c_sharp\collection_practice\obj\Debug\net6.0\collection_practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shado\c_sharp\collection_practice\obj\Debug\net6.0\collection_practice.AssemblyInfoInputs.cache
+C:\Users\shado\c_sharp\collection_practice\obj\Debug\net6.0\collection_practice.AssemblyInfo.cs
+C:\Users\shado\c_sharp\collection_practice\obj\Debug\net6.0\collection_practice.csproj.CoreCompileInputs.cache
+C:\Users\shado\c_sharp\collection_practice\obj\Debug\net6.0\collection_practice.dll
+C:\Users\shado\c_sharp\collection_practice\obj\Debug\net6.0\refint\collection_practice.dll
+C:\Users\shado\c_sharp\collection_practice\obj\Debug\net6.0\collection_practice.pdb
+C:\Users\shado\c_sharp\collection_practice\obj\Debug\net6.0\collection_practice.genruntimeconfig.cache
+C:\Users\shado\c_sharp\collection_practice\obj\Debug\net6.0\ref\collection_practice.dll
