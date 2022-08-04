@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shado\\c_sharp\\dojosurvey\\dojosurvey.csproj": {}
+    "C:\\Users\\shado\\c_sharp\\DojoSurvey\\DojoSurvey.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shado\\c_sharp\\dojosurvey\\dojosurvey.csproj": {
+    "C:\\Users\\shado\\c_sharp\\DojoSurvey\\DojoSurvey.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shado\\c_sharp\\dojosurvey\\dojosurvey.csproj",
-        "projectName": "dojosurvey",
-        "projectPath": "C:\\Users\\shado\\c_sharp\\dojosurvey\\dojosurvey.csproj",
+        "projectUniqueName": "C:\\Users\\shado\\c_sharp\\DojoSurvey\\DojoSurvey.csproj",
+        "projectName": "DojoSurvey",
+        "projectPath": "C:\\Users\\shado\\c_sharp\\DojoSurvey\\DojoSurvey.csproj",
         "packagesPath": "C:\\Users\\shado\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shado\\c_sharp\\dojosurvey\\obj\\",
+        "outputPath": "C:\\Users\\shado\\c_sharp\\DojoSurvey\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shado\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -48,6 +48,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

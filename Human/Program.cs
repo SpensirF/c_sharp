@@ -12,3 +12,4 @@ Samurai sam1 = new Samurai("kenshin");
 Wizard wiz1 = new Wizard("gandolf");
 
 Console.WriteLine(sam1.Attack(ninja1));
+Console.WriteLine(ninja1.Health);
