@@ -1,19 +1,13 @@
-<h1>Submitted Info</h1>
+@model DojoSurvey.Models.User
 
-<div>
-    <label for="">Name:</label>
-    @ViewBag.name
-</div>
-<div>
-    <label for="">Location</label>
-    @ViewBag.location
-</div>
-<div>
-    <label for="">Language</label>
-    @ViewBag.language
-</div>
-<div>
-    <label for="">Comments</label>
-    @ViewBag.comments
-</div>
-<a href="/">Go Back</a>
+
+
+
+<h1>Submitted Info</h1>
+<h2>Nice-su</h2>
+<p>Hello @Model.Name </p>
+<p>From @Model.Location </p>
+<p>who speaks  @Model.FavoriteLanguage </p>
+<p> @Model.Comments </p>
+
+

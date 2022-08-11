@@ -40,6 +40,128 @@ class SinglyLinkedList {
       /** @type {ListNode|null} */
         this.head = null;
     }
+    /**
+     * Concatenates the nodes of a given list onto the back of this list.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @param {SinglyLinkedList} addList An instance of a different list whose
+     *    whose nodes will be added to the back of this list.
+     * @returns {SinglyLinkedList} This list with the added nodes.
+     */
+    concat(addList) {
+        if (addList == null) {
+            return this; 
+        }
+        if (this.isEmpty()){
+            return addList; 
+        }
+        let runner = this.head;
+
+        while (runner.next !== null) {
+        runner = runner.next;
+        }
+
+        runner.next = addList.head;
+        return this;
+
+    }
+    /**
+      * Finds the node with the smallest data and moves that node to the front of
+      * this list.
+      * - Time: O(?).
+      * - Space: O(?).
+      * @returns {SinglyLinkedList} This list.
+      */
+    moveMinToFront() {
+        if (this.isEmpty()){
+            return null;
+        }
+        let runner = this.head;
+        let min = this.head;
+        let skip = this.head;  
+        while (runner.next){
+            if(runner.data < min.data){
+                skip = runner.next; 
+                min = runner.data; 
+            }
+            else{
+                runner = runner.next; 
+            }
+        }
+        skip 
+        min = this.head; 
+        runner.next = min; 
+        while(runner.next){
+            runner = runner.next 
+        }
+        runner.next = skip; 
+
+    }
+
+     // EXTRA
+    /**
+      * Splits this list into two lists where the 2nd list starts with the node
+      * that has the given value.
+      * splitOnVal(5) for the list (1=>3=>5=>2=>4) will change list to (1=>3)
+      * and the return value will be a new list containing (5=>2=>4)
+      * - Time: O(?).
+      * - Space: O(?).
+      * @param {any} val The value in the node that the list should be split on.
+      * @returns {SinglyLinkedList} The split list containing the nodes that are
+      *    no longer in this list.
+      */
+    splitOnVal(val) {}
+    /**
+     * Retrieves the data of the second to last node in this list.
+     * - Time: O(?).
+     * - Space: O(?).
+     * @returns {any} The data of the second to last node or null if there is no
+     *    second to last node.
+     */
+    secondToLast() {
+        let temp = this.head; 
+
+        while (temp.next.next !== null){
+            temp = temp.next;
+        }
+        return temp.data; 
+    }
+
+    /**
+      * Removes the node that has the matching given val as it's data.
+      * - Time: O(?).
+      * - Space: O(?).
+      * @param {any} val The value to compare to the node's data to find the
+      *    node to be removed.
+      * @returns {boolean} Indicates if a node was removed or not.
+      */
+    removeVal(val) {
+        let current = this.head; 
+        while(current !== null){
+            if(current.next.data == val){
+                current.next = current.next.next; 
+                return true;
+            }
+            else{
+                return false; 
+            }
+            current = current.next;
+        }
+        
+    }
+
+     // EXTRA
+    /**
+      * Inserts a new node before a node that has the given value as its data.
+      * - Time: O(?).
+      * - Space: O(?).
+      * @param {any} newVal The value to use for the new node that is being added.
+      * @param {any} targetVal The value to use to find the node that the newVal
+      *    should be inserted in front of.
+      * @returns {boolean} To indicate whether the node was pre-pended or not.
+      */
+    prepend(newVal, targetVal) {}
+
 
     /**
      * Removes the last node of this list.
@@ -97,7 +219,22 @@ class SinglyLinkedList {
      *    max integer as it's data.
      * @returns {?number} The max int or null if none.
      */
-    recursiveMax(runner = this.head, maxNode = this.head) {}
+    recursiveMax(runner = this.head, maxNode = this.head) {
+        if (this.head === null) {
+            return null;
+        }
+    
+        if (runner === null) {
+            return maxNode.data;
+        }
+    
+        if (runner.data > maxNode.data) {
+            maxNode = runner;
+        }
+    
+        return this.recursiveMax(runner.next, maxNode);
+    }
+    
 
     /**
      * Creates a new node with the given data and inserts that node at the front
@@ -107,7 +244,7 @@ class SinglyLinkedList {
      * @param {any} data The data for the new node.
      * @returns {SinglyLinkedList} This list.
      */
-    insertAtFront(data) {
+    insertAtFront(data){
         const newHead = new ListNode(data);
         newHead.next = this.head;
         this.head = newHead;
@@ -248,11 +385,19 @@ const emptyList = new SinglyLinkedList();
 
   // const singleNodeList = new SinglyLinkedList().insertAtBackMany([1]);
   // const biNodeList = new SinglyLinkedList().insertAtBackMany([1, 2]);
-  // const firstThreeList = new SinglyLinkedList().insertAtBackMany([1, 2, 3]);
-  // const secondThreeList = new SinglyLinkedList().insertAtBackMany([4, 5, 6]);
+// const firstThreeList = new SinglyLinkedList().insertAtBackMany([1, 2, 3]);
+const secondThreeList = new SinglyLinkedList().insertAtBackMany([4, 5, 6]);
 const unorderedList = new SinglyLinkedList().insertAtBackMany([
-    -5, -10, 4, -3, 6, 1, -7, -2,]).containsRecursive(-1);
-    console.log(unorderedList)
+    -5, -10, 4, -3, 6, 1, -7, -2, 69]);
+    // console.log(unorderedList.());
+const minList = unorderedList.moveMinToFront();
+console.log(minList.toArr());
+
+//     console.log(unorderedList.secondToLast());
+//     console.log(unorderedList.removeVal(-9));
+
+const concatList = secondThreeList.concat(unorderedList);
+console.log(concatList.toArr());
 
   /* node 4 connects to node 1, back to head */
   // const perfectLoopList = new SinglyLinkedList().insertAtBackMany([1, 2, 3, 4]);
