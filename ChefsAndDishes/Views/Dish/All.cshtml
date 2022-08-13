@@ -1,0 +1,60 @@
+@model List<Dish>
+
+
+<div class="title">
+    <h1><a href="/chefs">Chefs</a> | <a href="/dishes">Dishes</a></h1>
+</div>
+    <h2>Yum. take a look at our tasty dishes! </h2>
+    <div>
+    <a href="/dishes/new">Add a Dish</a>
+</div>
+
+
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <th>Name</th>
+        <th>Chef</th>
+        <th>Tastiness</th>
+        <th>Calories</th>
+    </thead>
+    <tbody>
+        @if (ViewBag.AllDishes != null)
+        {
+            @foreach(var d in ViewBag.AllDishes)
+            {
+                <tr>
+                    <td>@d.Name</td>
+                    <td>@d.Author.FirstName @d.Author.LastName</td>
+                    <td>@d.Tastiness</td>
+                    <td>@d.Calories</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+@* @foreach (Dish dish in Model)
+{
+    <div class="dishes">
+        <a asp-action="ViewDish"asp-route-dishId="@dish.DishId">@dish.Name</a>
+        <div class="by">
+            <p>By</p>
+        </div>
+        <p class="card-text">@dish.Chef</p>
+    </div>
+    
+}
+
+<div>
+    <a href="/dishes/new">Add a Dish</a>
+</div> *@

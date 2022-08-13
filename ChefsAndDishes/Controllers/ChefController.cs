@@ -2,20 +2,20 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ChefsAndDishes.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace ChefsAndDishes.Controllers;
     
-public class DishController : Controller
+public class ChefController : Controller
 {
     private ChefsnDishesContext DATABASE;
     
     // here we can "inject" our context service into the constructor
-    public DishController(ChefsnDishesContext context)
+    public ChefController(ChefsnDishesContext context)
     {
         DATABASE = context;
     }
-
     private int? uid
     {
         get
@@ -32,54 +32,47 @@ public class DishController : Controller
         }
     }
 
-    [HttpGet("/")]
-    [HttpGet("/dishes/all")]
+    [HttpGet("/chefs/all")]
     public IActionResult All()
     {
-        List<Dish> AllDishes = DATABASE.Dishes.ToList();
+        List<Chef> AllChefs = DATABASE.Chefs.ToList();
 
-        return View("All", AllDishes);
+        return View("Chefs", AllChefs);
     }
 
-
-
-    [HttpGet("/dishes/new")]
+    [HttpGet("/chef/new")]
     public IActionResult New()
     {
-        ViewBag.AllChefs = DATABASE.Chefs.ToList();
-        return View("NewDish");
+        return View("NewChef");
     }
 
-    [HttpGet("/dishes")]
-        public IActionResult Dishes()
+    [HttpGet("/chefs")]
+        public IActionResult Chefs()
         {
-            List<Dish> EveryDish = DATABASE.Dishes.Include(d => d.Author).ToList();
-            ViewBag.AllDishes = EveryDish;
-            return View("All");
+            List<Chef> TheChefs = DATABASE.Chefs.Include(c => c.CreatedDishes).ToList();
+            ViewBag.AllChefs = TheChefs;
+            return View("Chefs");
         }
 
 
 
 
-//---->                   POST                                   
 
 
-[HttpPost("/dish/create")]
-    public IActionResult Create(Dish newDish)
+    //---->                   POST                                   
+
+    [HttpPost("/chef/create")]
+    public IActionResult Create(Chef newChef)
     {
         if(ModelState.IsValid == false)
         {
             return New();
         }
-        DATABASE.Dishes.Add(newDish);
+        DATABASE.Chefs.Add(newChef);
         DATABASE.SaveChanges();
 
-        return RedirectToAction("All");
+        return RedirectToAction("Chefs");
     }
-
-
-
-
 
 
 

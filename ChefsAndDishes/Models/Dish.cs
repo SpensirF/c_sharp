@@ -19,11 +19,6 @@ public class Dish
     public string Name { get; set; }
 
     [Required]
-    [MinLength(2)]
-    [MaxLength(45)]
-    public string Chef { get; set; }
-
-    [Required]
     public int Tastiness { get; set; }
 
     [Required]
@@ -34,4 +29,17 @@ public class Dish
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+
+    public int ChefId { get; set; } // this FK NEEDS to match w/ the PK property
+    public Chef? Author { get; set; } // 1 user related to each post
+
+
+
+
+
 }
+
+
+
+

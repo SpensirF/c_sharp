@@ -19,6 +19,34 @@ namespace ChefsAndDishes.Migrations
                 .HasAnnotation("ProductVersion", "6.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("ChefsAndDishes.Models.Chef", b =>
+                {
+                    b.Property<int>("ChefId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("DateofBirth")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("ChefId");
+
+                    b.ToTable("Chefs");
+                });
+
             modelBuilder.Entity("ChefsAndDishes.Models.Dish", b =>
                 {
                     b.Property<int>("DishId")
@@ -28,10 +56,8 @@ namespace ChefsAndDishes.Migrations
                     b.Property<int>("Calories")
                         .HasColumnType("int");
 
-                    b.Property<string>("Chef")
-                        .IsRequired()
-                        .HasMaxLength(45)
-                        .HasColumnType("varchar(45)");
+                    b.Property<int>("ChefId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
@@ -53,7 +79,25 @@ namespace ChefsAndDishes.Migrations
 
                     b.HasKey("DishId");
 
+                    b.HasIndex("ChefId");
+
                     b.ToTable("Dishes");
+                });
+
+            modelBuilder.Entity("ChefsAndDishes.Models.Dish", b =>
+                {
+                    b.HasOne("ChefsAndDishes.Models.Chef", "Author")
+                        .WithMany("CreatedDishes")
+                        .HasForeignKey("ChefId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Author");
+                });
+
+            modelBuilder.Entity("ChefsAndDishes.Models.Chef", b =>
+                {
+                    b.Navigation("CreatedDishes");
                 });
 #pragma warning restore 612, 618
         }

@@ -15,6 +15,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\shado\c_sharp\ChefsAndDishes
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Chef/Chefs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxDaGVmcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Chef/NewChef.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxOZXdDaGVmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Dish/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Dish/NewDish.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxOZXdEaXNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/shado/c_sharp/ChefsAndDishes/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -12,4 +12,6 @@ public class ChefsnDishesContext : DbContext
     // the "Monsters" table name will come from the DbSet property name
     
     public DbSet<Dish> Dishes { get; set; } 
+
+    public DbSet<Chef> Chefs { get; set; } 
 }

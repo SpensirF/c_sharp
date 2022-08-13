@@ -47,6 +47,74 @@ class BinarySearchTree {
      * @param {Array<number>} vals The data that has been visited so far.
      * @returns {Array<number>} The vals in DFS Preorder once all nodes visited.
      */
+
+/**
+    * BFS order: horizontal rows top-down left-to-right.
+    * Converts this BST into an array following Breadth First Search order.
+    * Example on the fullTree var:
+    * [25, 15, 50, 10, 22, 35, 70, 4, 12, 18, 24, 31, 44, 66, 90]
+    * @param {Node} current The current node during the traversal of this tree.
+    * @returns {Array<number>} The data of all nodes in BFS order.
+    */
+toArrLevelorder(current = this.root, val = []) {
+    let result = []
+    let path = [current]
+    if (path === null) {
+        return false;
+    }
+    //What we're doing is defining a root, and then going to the next step and going "okay, this is what's here"
+    while(path.length != 0) {
+        let subarr = []
+        const n = path.length 
+        for (let i = 0; i < n; i++){
+            let node = path.pop() 
+            subarr.push(node) 
+            if (node.left){
+                path.push(node.left)
+            console.log(subarr)
+            } 
+            if (node.right){
+                path.push(node.right)
+            } 
+        }
+        result.push(subarr)
+    }
+    return result
+}
+
+/**
+ * Recursively counts the total number of nodes in this tree.
+  * - Time: O(?).
+  * - Space: O(?).
+  * @param {Node} node The current node during the traversal of this tree.
+  * @returns {number} The total number of nodes.
+  */
+size(node = this.root) {}
+
+/**
+  * Calculates the height of the tree which is based on how many nodes from
+  * top to bottom (whichever side is taller).
+  * - Time: O(?).
+  * - Space: O(?).
+  * @param {Node} node The current node during traversal of this tree.
+  * @returns {number} The height of the tree.
+  */
+height(node = this.root) {}
+
+/**
+  * Determines if this tree is a full tree. A full tree is a tree where every
+  * node has both a left and a right except for the leaf nodes (last nodes)
+  * - Time: O(?).
+  * - Space: O(?).
+  * @param {Node} node The current node during traversal of this tree.
+  * @returns {boolean} Indicates if this tree is full.
+  */
+isFull(node = this.root) {}
+
+
+
+
+
     toArrPreorder(node = this.root, vals = []) {
         if (node == null) {
             return vals;
@@ -375,8 +443,10 @@ threeLevelTree.root.right = new BSTNode(15);
 threeLevelTree.root.right.left = new BSTNode(13);
 // console.log(threeLevelTree.toArrPreorder())
 // console.log(threeLevelTree.toArrInorder())
-// console.log(threeLevelTree.toArrPostorder())
+console.log(threeLevelTree.toArrLevelorder())
 // console.log(threeLevelTree.print());
+
+
 
 /* fullTree
                     root
@@ -389,10 +459,10 @@ threeLevelTree.root.right.left = new BSTNode(13);
     4    12  18  24   31  44 66  90
 */
 /***************** Uncomment after insert method is created. ****************/
-const fullTree = new BinarySearchTree();
+// const fullTree = new BinarySearchTree();
 
 
-fullTree
+// fullTree
 // .insert(25)
 // .insert(15)
 // .insert(10)

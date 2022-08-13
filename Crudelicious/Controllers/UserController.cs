@@ -134,7 +134,7 @@ public class UserController : Controller
         // no returns, therefore no errors
         HttpContext.Session.SetInt32("U-ID", dbUser.UserId);
         HttpContext.Session.SetString("Name", dbUser.FullName());
-        return RedirectToAction("All");
+        return RedirectToAction("Success");
     }
 
     [HttpPost("/logout")]
