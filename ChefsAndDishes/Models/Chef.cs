@@ -23,6 +23,7 @@ public class Chef
     public string LastName { get; set; }
 
     [Required]
+    
     [Display(Name = "Date of Birth")]
     public DateTime DateofBirth { get; set; }
 
@@ -36,6 +37,15 @@ public class Chef
         return FirstName + " " + LastName;
     }
 
-    
+    public static int CalculateAge(DateTime DateofBirth)
+        {
+            int age = 0;
+            age = DateTime.Now.Year - DateofBirth.Year;
+            if (DateTime.Now.DayOfYear < DateofBirth.DayOfYear)
+            {
+                age--;
+            }
+            return age;
+        }
 }
 
