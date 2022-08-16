@@ -32,7 +32,7 @@ public class DishController : Controller
         }
     }
 
-    [HttpGet("/")]
+    
     [HttpGet("/dishes/all")]
     public IActionResult All()
     {
@@ -49,14 +49,14 @@ public class DishController : Controller
         ViewBag.AllChefs = DATABASE.Chefs.ToList();
         return View("NewDish");
     }
-
+    [HttpGet("")]
     [HttpGet("/dishes")]
-        public IActionResult Dishes()
-        {
-            List<Dish> EveryDish = DATABASE.Dishes.Include(d => d.Author).ToList();
-            ViewBag.AllDishes = EveryDish;
-            return View("All");
-        }
+    public IActionResult Dishes()
+    {
+        List<Dish> EveryDish = DATABASE.Dishes.Include(d => d.Author).ToList();
+        ViewBag.AllDishes = EveryDish;
+        return View("All");
+    }
 
 
 

@@ -19,7 +19,7 @@ public class ProductController : Controller
 
     [HttpGet("/")]
     [HttpGet("/Products")]
-    public IActionResult All()
+    public IActionResult AllProducts()
     {
         List<Product> Products = DATABASE.Products.ToList();
         ViewBag.AllProducts = Products;
@@ -27,29 +27,25 @@ public class ProductController : Controller
         return View("Products");
     }
 
-    [HttpGet("products/{prodId}")]
+    [HttpGet("/product/{prodId}")]
         public IActionResult OneProduct(int prodId)
         {
-            Product? OneProduct = DATABASE.Products.FirstOrDefault(p => p.ProductId == prodId);
-            ViewBag.ThisProduct = OneProduct;
+            ViewBag.Product = DATABASE.Products
+            .Include(p => p.item)
+            .ThenInclude(a => a.Category)
+            .FirstOrDefault(p => p.ProductId == prodId);
 
-            var prodWithCats = DATABASE.Products
-                .Include(p => p.item)
-                .ThenInclude(c => c.Category)
-                .FirstOrDefault(p => p.ProductId == prodId);
+            ViewBag.SingleProduct = DATABASE.Products.FirstOrDefault(p => p.ProductId == prodId);
             
-            ViewBag.ProductWithCategories = prodWithCats;
+            ViewBag.CatNoAssoc = DATABASE.Categories
+                .Include(c => c.group)
+                .Where(p => !p.group.Any(p => p.ProductId == prodId));
 
-            List<Category> EveryCategory = DATABASE.Categories.ToList();
-            List<Category> SomeCategories = new List<Category>();
-
-            foreach (var c in prodWithCats.)
-            {
-                SomeCategories.Add(c.Category);
+            if(ViewBag.Products != null){
+                return View("OneProduct");
             }
-            List<Category> NotYetAssoc = EveryCategory.Except(SomeCategories).ToList();
-            ViewBag.NotYetAssoc = NotYetAssoc;
-            return View("SpecificProduct");
+
+        return View("OneProduct");
         }
 
 
@@ -60,13 +56,23 @@ public class ProductController : Controller
 
 
     [HttpPost("/product/new")]
-    public IActionResult New(Product NewProduct)
+    public IActionResult NewProduct(Product NewProduct)
     {
         ViewBag.Categories = DATABASE.Categories.ToList();
         DATABASE.Add(NewProduct);
         DATABASE.SaveChanges();
-        return RedirectToAction("Products");
+        return RedirectToAction("AllProducts");
     }
+
+    [HttpPost("/AddCategory/{prodID}")]
+        public IActionResult AddCategory(Association newAssociation, int prodID)
+        {
+            newAssociation.ProductId = prodID;
+            DATABASE.Associations.Add(newAssociation);
+            DATABASE.SaveChanges();
+            // return Redirect("/products/"+newAssociation.ProductId);
+            return RedirectToAction("AllProducts");
+        }
 
 
 

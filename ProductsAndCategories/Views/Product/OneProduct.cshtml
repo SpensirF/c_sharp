@@ -3,35 +3,31 @@
 
 
 
-<h1>@ViewBag.ThisProduct.Name</h1>
+<h1>@ViewBag.Product.Name</h1>
 
 <div class="left">
     <h2>Categories:</h2>
     <ul>
-        @if (ViewBag.ProductWithCategories != null)
-        {
-            @foreach (var c in ViewBag.ProductWithCategories.AssocCats)
+            @foreach (Association c in ViewBag.Product.item)
             {
                 <li>@c.Category.Name</li>
             }
-        }
     </ul>
 </div>
-<form class="right" asp-action="AddCatToProd" asp-controller="Home" method="POST">
+<form class="right" asp-action="AddCategory" asp-controller="Product" asp-route-prodID= "@ViewBag.SingleProduct.ProductId" method="POST">
     <h3>Add Category:</h3>
-    <div class="row">
-        <input type="hidden" asp-for="ProductId" value="@ViewBag.ThisProduct.ProductId">
+    <div class="mb-3">
         <select asp-for="CategoryId">
-        @if (ViewBag.NotYetAssoc != null)
+        @if (ViewBag.CatNoAssoc != null)
         {
-            @foreach (var c in ViewBag.NotYetAssoc)
+            @foreach (Category c in ViewBag.CatNoAssoc)
             {
                 <option value="@c.CategoryId">@c.Name</option>
             }
         }
         </select>
     </div>
-    <div class="row">
+    <div class="mb-3">
         <input value="Add" type="submit">
     </div>
 </form>

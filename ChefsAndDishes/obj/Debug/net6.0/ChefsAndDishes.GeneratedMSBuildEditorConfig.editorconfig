@@ -8,49 +8,49 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ChefsAndDishes
 build_property.RootNamespace = ChefsAndDishes
-build_property.ProjectDir = c:\Users\shado\c_sharp\ChefsAndDishes\
+build_property.ProjectDir = C:\Users\shado\c_sharp\ChefsAndDishes\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\shado\c_sharp\ChefsAndDishes
+build_property.MSBuildProjectDirectory = C:\Users\shado\c_sharp\ChefsAndDishes
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/shado/c_sharp/ChefsAndDishes/Views/Chef/Chefs.cshtml]
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Chef/Chefs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxDaGVmcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/shado/c_sharp/ChefsAndDishes/Views/Chef/NewChef.cshtml]
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Chef/NewChef.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxOZXdDaGVmLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/shado/c_sharp/ChefsAndDishes/Views/Dish/All.cshtml]
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Dish/All.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/shado/c_sharp/ChefsAndDishes/Views/Dish/NewDish.cshtml]
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Dish/NewDish.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxOZXdEaXNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/shado/c_sharp/ChefsAndDishes/Views/Home/Index.cshtml]
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/shado/c_sharp/ChefsAndDishes/Views/Home/Privacy.cshtml]
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/shado/c_sharp/ChefsAndDishes/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/shado/c_sharp/ChefsAndDishes/Views/_ViewImports.cshtml]
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/shado/c_sharp/ChefsAndDishes/Views/_ViewStart.cshtml]
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/shado/c_sharp/ChefsAndDishes/Views/Shared/_Layout.cshtml]
+[C:/Users/shado/c_sharp/ChefsAndDishes/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-nfy0wyx8b9

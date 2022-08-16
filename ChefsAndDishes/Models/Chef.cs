@@ -36,29 +36,6 @@ public class Chef
         return FirstName + " " + LastName;
     }
 
-    // public class CheckChefAge : ValidationAttribute
-    // {
-    //     protected override ValidationResult? IsValid(object value, ValidationContext validationContext)
-    //         {
-    //             int age = CalculateAge((DateTime)value);
-    //             if (age < 18)
-    //             {
-    //                 return new ValidationResult("Chefs must be at least 18 years old!");
-    //             }
-    //             return ValidationResult.Success;
-    //         }
-
-    //     public static int CalculateAge(DateTime dob)
-    //     {
-    //         int age = 0;
-    //         age = DateTime.Now.Year - dob.Year;
-    //         if (DateTime.Now.DayOfYear < dob.DayOfYear)
-    //         {
-    //             age--;
-    //         }
-    //         return age;
-    //     }
-    // }
-        
+    
 }
 
