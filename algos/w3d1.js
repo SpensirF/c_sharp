@@ -72,6 +72,15 @@ class MinHeap {
 
     }
 
+    /**
+     * Swaps two nodes.
+     * @param {number} i
+     * @param {number} j
+     */
+    swap(i, j) {
+        [this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]];
+    }
+
     top() {
         return this.heap.length > 1 ? this.heap[1] : null;
     }

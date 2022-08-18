@@ -9,6 +9,9 @@ namespace WeddingPlanner.Models;
 public class WeddingPlannerContext : DbContext 
 { 
     public WeddingPlannerContext(DbContextOptions options) : base(options) { }
-    // the "Monsters" table name will come from the DbSet property name
-    // public DbSet<Monster> Monsters { get; set; } 
+
+    public DbSet<User> Users { get; set; } 
+    public DbSet<Wedding> Weddings { get; set; } 
+    public DbSet<WeddingGuest> WeddingGuests { get; set; } 
+
 }

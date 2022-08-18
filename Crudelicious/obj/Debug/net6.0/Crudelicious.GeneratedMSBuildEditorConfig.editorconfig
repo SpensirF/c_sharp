@@ -8,69 +8,69 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Crudelicious
 build_property.RootNamespace = Crudelicious
-build_property.ProjectDir = C:\Users\shado\c_sharp\Crudelicious\
+build_property.ProjectDir = c:\Users\shado\c_sharp\Crudelicious\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\shado\c_sharp\Crudelicious
+build_property.MSBuildProjectDirectory = c:\Users\shado\c_sharp\Crudelicious
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/Dish/All.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/Dish/All.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/Dish/Edit.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/Dish/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/Dish/New.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/Dish/New.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxOZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/Dish/ViewDish.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/Dish/ViewDish.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxWaWV3RGlzaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/Home/Index.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/Home/Privacy.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/Shared/Error.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/User/Index.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/User/Success.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/User/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/User/_Login.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/User/_Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/User/_Register.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/User/_Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/_ViewImports.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/_ViewStart.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shado/c_sharp/Crudelicious/Views/Shared/_Layout.cshtml]
+[c:/Users/shado/c_sharp/Crudelicious/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-578ojld7si

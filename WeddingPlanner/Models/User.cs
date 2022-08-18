@@ -4,6 +4,7 @@
 
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+namespace WeddingPlanner.Models; 
 
 public class User
 {
@@ -38,8 +39,14 @@ public class User
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
+    // public List<Dish> CreatedDishes { get; set; } = new List<Dish>();
+
     public string FullName()
     {
         return FirstName + " " + LastName;
     }
+
+    public List<WeddingGuest> UserGuest {get; set;} = new List<WeddingGuest>(); 
+
+
 }
