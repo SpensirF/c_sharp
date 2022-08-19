@@ -39,7 +39,6 @@ public class User
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
-    // public List<Dish> CreatedDishes { get; set; } = new List<Dish>();
 
     public string FullName()
     {

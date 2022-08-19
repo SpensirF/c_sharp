@@ -18,7 +18,7 @@ public class DishController : Controller
     [HttpGet("/dishes/all")]
     public IActionResult All()
     {
-        List<Dish> AllDishes = _context.Dishes.ToList();
+        List<Dish> AllDishes = DATABASE.Dishes.ToList();
 
         return View("All", AllDishes);
     }

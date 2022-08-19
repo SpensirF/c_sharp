@@ -1,0 +1,42 @@
+@model Hobby
+
+
+
+<h1>@Model.Name</h1>
+<h3>Description: @Model.Description</h3>
+
+<h4>Enthusiasts:</h4>
+<ul>
+    @foreach (HobbyEnthusiast guest in Model.Enthusiast)
+    {
+        if(guest.Obsession != null)
+        {
+        <li>@guest.Obsession.FirstName</li>
+        }
+    }
+</ul>
+<h4>Become an Enthusiasts</h4>
+    @if(Model.UserId == Context.Session.GetInt32("U-ID"))
+    {
+        <form asp-controller="Hobby" asp-action="DeleteHobby" asp-route-hobbId=@Model.HobbyId><button><Span>Delete</Span></button></form>
+    }
+    else
+    {
+        bool alreadyRsvp = Model.Enthusiast.Any(guest => guest.UserId == Context.Session.GetInt32("U-ID"));
+        <form asp-controller="Hobby" asp-action="RSVP" asp-route-hobbId=@Model.HobbyId>
+            <button>
+                @if(alreadyRsvp)
+                {
+                    <span>Remove from list</span>
+                }
+                else
+                {
+                    <span>Become an Enthusiasts</span>
+                }
+            </button>
+        </form>
+    }
+@if (Model.UserId == Context.Session.GetInt32("U-ID"))
+{
+<a href="/hobby/@Model.HobbyId/edit">Edit Hobby</a>
+}

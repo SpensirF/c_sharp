@@ -46,7 +46,7 @@ public class UserController : Controller
     [HttpGet("/sucess")]
     public IActionResult Success()
     {
-        return View("Success");
+        return View("All");
     }
 
     [HttpGet("/Login")]
@@ -66,7 +66,7 @@ public class UserController : Controller
         {
             return RedirectToAction("All", "Dish");
         }
-        return View("_Register");
+        return View("All", "Dish");
     }
 
 

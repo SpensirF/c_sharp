@@ -1,0 +1,53 @@
+@model List<MeetUp>
+    <h1>Dojo Meet Up Center </h1>
+
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <th>Meet Up</th>
+        <th>Date & Time</th>
+        <th>Duration</th>
+        <th>Creator</th>
+        <th>No. of Participants</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        @foreach(MeetUp w in Model)
+        {
+            @if(w.MeetupCreator != null)
+            {
+            <tr>
+                <td><a asp-controller="MeetUp" asp-action="OneMeetup" asp-route-meetId="@w.MeetupId">@w.Title </a>
+                </td>
+                <td>@w.Date</td>
+                <td>@w.Duration</td>
+                <td>@w.MeetupCreator.Name</td>
+                <td>@w.Occasion.Count</td>
+                <td>
+                    @if (w.UserId == Context.Session.GetInt32("U-ID"))
+                    {
+                        <form asp-controller="MeetUp" asp-action="DeleteMeetup" asp-route-meetId=@w.MeetupId><button><Span>Delete</Span></button></form>
+                    }
+                    else
+                    {
+                        bool alreadyRsvp = w.Occasion.Any(guest => guest.UserId == Context.Session.GetInt32("U-ID"));
+                        <form asp-controller="MeetUp" asp-action="RSVP" asp-route-meetId=@w.MeetupId>
+                            <button>
+                                @if(alreadyRsvp)
+                                {
+                                    <span>Un-JOIN</span>
+                                }
+                                else
+                                {
+                                    <span>JOIN</span>
+                                }
+                            </button>
+                        </form>
+                    }
+                    </td>
+                </tr>
+                }
+            }
+    </tbody>
+</table>
+<a href="/meetup/new"><button>Create a MeetUp</button></a>

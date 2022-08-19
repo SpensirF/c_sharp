@@ -1,0 +1,41 @@
+@model MeetUp
+
+
+
+<h1>@Model.Title</h1>
+@if(Model.MeetupCreator != null)
+{
+    <h2>@Model.MeetupCreator.Name</h2>
+}
+<h3>@Model.Description</h3>
+    @if(Model.UserId == Context.Session.GetInt32("U-ID"))
+    {
+        <form asp-controller="MeetUp" asp-action="DeleteMeetup" asp-route-meetId=@Model.MeetupId><button><Span>Delete</Span></button></form>
+    }
+    else
+    {
+        bool alreadyRsvp = Model.Occasion.Any(guest => guest.UserId == Context.Session.GetInt32("U-ID"));
+        <form asp-controller="MeetUp" asp-action="RSVP" asp-route-meetId=@Model.MeetupId>
+            <button>
+                @if(alreadyRsvp)
+                {
+                    <span>Un-JOIN</span>
+                }
+                else
+                {
+                    <span>JOIN</span>
+                }
+            </button>
+        </form>
+    }
+
+<h4>Participants:</h4>
+<ul>
+    @foreach (MeetupParticipant guest in Model.Occasion)
+    {
+        if(guest.Participant != null)
+        {
+        <li>@guest.Participant.Name</li>
+        }
+    }
+</ul>
