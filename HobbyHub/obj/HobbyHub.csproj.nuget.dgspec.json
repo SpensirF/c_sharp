@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shado\\c_sharp\\HobbyHub\\HobbyHub.csproj": {}
+    "C:\\Users\\shado\\OneDrive\\Desktop\\HobbyHub\\HobbyHub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shado\\c_sharp\\HobbyHub\\HobbyHub.csproj": {
+    "C:\\Users\\shado\\OneDrive\\Desktop\\HobbyHub\\HobbyHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shado\\c_sharp\\HobbyHub\\HobbyHub.csproj",
+        "projectUniqueName": "C:\\Users\\shado\\OneDrive\\Desktop\\HobbyHub\\HobbyHub.csproj",
         "projectName": "HobbyHub",
-        "projectPath": "C:\\Users\\shado\\c_sharp\\HobbyHub\\HobbyHub.csproj",
+        "projectPath": "C:\\Users\\shado\\OneDrive\\Desktop\\HobbyHub\\HobbyHub.csproj",
         "packagesPath": "C:\\Users\\shado\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shado\\c_sharp\\HobbyHub\\obj\\",
+        "outputPath": "C:\\Users\\shado\\OneDrive\\Desktop\\HobbyHub\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shado\\AppData\\Roaming\\NuGet\\NuGet.Config"

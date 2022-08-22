@@ -36,7 +36,3 @@
             </button>
         </form>
     }
-@if (Model.UserId == Context.Session.GetInt32("U-ID"))
-{
-<a href="/hobby/@Model.HobbyId/edit">Edit Hobby</a>
-}
