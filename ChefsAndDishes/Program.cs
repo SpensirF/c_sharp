@@ -1,4 +1,4 @@
-using ChefsAndDishes.Models;
+using Namespace.Models;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +10,7 @@ builder.Services.AddSession();  // add this line before calling the builder.Buil
 
 //  Creates the db connection string
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ChefsnDishesContext>(options =>
+builder.Services.AddDbContext<NamespaceContext>(options =>
 {
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
@@ -26,6 +26,11 @@ app.UseSession();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
+
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+}
 
 app.MapControllerRoute(
     name: "default",

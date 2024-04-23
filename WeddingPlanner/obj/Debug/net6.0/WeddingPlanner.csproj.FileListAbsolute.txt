@@ -33,3 +33,38 @@ C:\Users\shado\c_sharp\WeddingPlanner\obj\Debug\net6.0\refint\WeddingPlanner.dll
 C:\Users\shado\c_sharp\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.pdb
 C:\Users\shado\c_sharp\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.genruntimeconfig.cache
 C:\Users\shado\c_sharp\WeddingPlanner\obj\Debug\net6.0\ref\WeddingPlanner.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\appsettings.Development.json
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\appsettings.json
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\WeddingPlanner.staticwebassets.runtime.json
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\WeddingPlanner.exe
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\WeddingPlanner.deps.json
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\WeddingPlanner.runtimeconfig.json
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\WeddingPlanner.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\WeddingPlanner.pdb
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\Humanizer.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\MySqlConnector.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.csproj.AssemblyReference.cache
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.AssemblyInfoInputs.cache
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.AssemblyInfo.cs
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.csproj.CoreCompileInputs.cache
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.MvcApplicationPartsAssemblyInfo.cache
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.RazorAssemblyInfo.cache
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.RazorAssemblyInfo.cs
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\staticwebassets.build.json
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\staticwebassets.development.json
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\scopedcss\bundle\WeddingPlanner.styles.css
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\scopedcss\projectbundle\WeddingPlanner.bundle.scp.css
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.csproj.CopyComplete
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\refint\WeddingPlanner.dll
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.pdb
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\WeddingPlanner.genruntimeconfig.cache
+E:\Dojo Bootcamp\C#\WeddingPlanner\obj\Debug\net6.0\ref\WeddingPlanner.dll
